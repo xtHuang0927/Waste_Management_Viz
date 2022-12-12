@@ -95,4 +95,4 @@ title="Trend of Annual Reported GHG Emissions by Waste Sector, Fitted by Linear 
     
     st.subheader('Emissions Prediction for 2022')
     predict = pd.read_csv('src/emissions_prediction_2022.csv')
-    st.dataframe(predict, use_container_width =False)
+    st.dataframe(predict, use_container_width = False)
