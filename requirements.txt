@@ -2,5 +2,5 @@ streamlit==1.6
 numpy
 altair
 pandas
-gyplot
+plotly
 openpyxl
