@@ -57,8 +57,4 @@
 {"plastic":"39","Location":"Non-OECD Average","type":"Mismanaged & uncollected litter"},
 {"plastic":"42","Location":"Non-OECD Average","type":"Landfilled"},
 {"plastic":"10","Location":"Non-OECD Average","type":"Incinerated"},
-{"plastic":"9","Location":"Non-OECD Average","type":"Recycled"},
-{"plastic":"22","Location":"World","type":"Mismanaged & uncollected litter"},
-{"plastic":"50","Location":"World","type":"Landfilled"},
-{"plastic":"19","Location":"World","type":"Incinerated"},
-{"plastic":"9","Location":"World","type":"Recycled"}]
+{"plastic":"9","Location":"Non-OECD Average","type":"Recycled"}]
