@@ -31,6 +31,31 @@ def set_globalBar():
 
     st.altair_chart(bar_chart + text)
 
+    df_plastic_world = pd.read_json('src/world_outlook.json')
+
+    bar_chart = alt.Chart(df_plastic_world, title = "Plastic Pollution World").mark_bar(size=50).encode(
+        x=alt.X('sum(plastic)', stack='zero', scale=alt.Scale(domain=[0, 100])),
+        y='Location',
+        color='type',
+        tooltip=['Location', 'type']
+
+    ).properties( 
+        width=900,
+        height=250
+    ).interactive()
+
+    text = alt.Chart(df_plastic_world).mark_text(dx=-15, dy=3, color='white').encode(
+        x=alt.X('sum(plastic):Q', stack='zero'),
+        y=alt.Y('Location:N'),
+        detail='type:N',
+        text=alt.Text('sum(plastic):Q', format='.1f')
+    )
+
+    col1, col2 = st.columns([0.5, 4.5])
+    col2.altair_chart(bar_chart + text)
+
+
+
 
 def set_ghg():
     
